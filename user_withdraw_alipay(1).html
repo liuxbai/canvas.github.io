@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>魔智点餐</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.mobile.custom.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/user.css" />
+		<script type="text/javascript">
+			$(function(){
+				$('.withdraw_list form').submit(function(){
+					var price = $(this).find('input[name=price]');
+					var price_val = $.trim(price.val());
+					var balance_val = parseFloat($(this).find('.balance_price').text());
+					if(price_val.length == 0){
+						$('.errorHint').addClass('show');
+						$('.errorHint').find('dd').text('请输入提现金额');
+						return false;
+					}
+					if(price_val > balance_val){
+						$('.errorHint').addClass('show');
+						$('.errorHint').find('dd').text('您的余额不足');
+						return false;
+					}
+					$('#pay_pword_box').addClass('show');
+					return false;
+				})
+			})
+			$(function(){
+				var payPassword = $('.pay_pword');
+				var k=0,j=0;
+				var _this = $('.pay_pword_list li');
+				payPassword.on('focus','.pay_pword_text',function(){
+					var _this = payPassword.find('li');
+					if(payPassword.attr('data-busy') === 0){
+						_this.eq(k).addClass('active');
+						payPassword.attr('data-busy',1);
+					}
+				})
+				payPassword.on('change','.pay_pword_text',function(){
+					_this.eq(k).removeClass('active');
+					payPassword.attr('data-busy',0);
+				}).on('blur','.pay_pword_text',function(){
+					_this.eq(k).removeClass('active');
+					payPassword.attr('data-busy',0);
+				})
+				$('.pay_pword_text').on('keyup',function(){
+					this.value = this.value.substr(0,6);
+					k = $(this).val().length;
+					l = _this.size();
+					for(;l--;){
+						if(l === k){
+							_this.eq(l).addClass('active');
+							_this.eq(l).find('b').css('visibility','hidden');
+						}else{
+							_this.eq(l).removeClass('active');
+							_this.eq(l).find('b').css('visibility', l < k ? 'visible' : 'hidden');
+						}
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="conBox">
+			<div id="subTop">
+				<dl class="flex">
+					<dd class="left">
+						<a href="javascript:history.back(-1);" class="return_bt"></a>
+					</dd>
+					<dd class="title flex">
+						提现到支付宝
+					</dd>
+					<dd class="right">
+						<a href="#" class="user_bt"></a>
+					</dd>
+				</dl>
+			</div>
+			<div id="content">
+				<div class="withdraw">
+					<div class="withdraw_list">
+						<form>
+							<dl class="inputBox flex">
+								<dd class="icon flex">
+									<span class="user_icon"></span>
+								</dd>
+								<dd class="inputTxt">
+									<input type="text" placeholder="请输入支付宝账号" name="alipay_id" />
+								</dd>
+							</dl>
+							<dl class="inputBox flex">
+								<dd class="icon flex">
+									<span class="user_icon"></span>
+								</dd>
+								<dd class="inputTxt">
+									<input type="text" placeholder="支付宝用户姓名" name="alipay_name" />
+								</dd>
+							</dl>
+							<dl class="price_con">
+								<dd class="text">提现金额</dd>
+								<dd class="price flex">
+									<span class="price_icon">￥</span>
+									<input type="tel" name="price" />
+								</dd>
+								<dd class="balance_text">
+									当前余额：<span class="red">￥<i class="balance_price">100.00</i></span>
+								</dd>
+							</dl>
+							<dl class="errorHint">
+								<dd>
+									您的余额不足
+								</dd>
+							</dl>
+							<dl class="bt">
+								<dd>
+									<button type="submit">确认提现</button>
+								</dd>
+							</dl>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="layerBg" id="pay_pword_box">
+			<div class="con hint_con pay_pword_box">
+				<dl>
+					<dd class="title flex">
+						支付密码
+					</dd>
+					<div class="pay_pword" data-busy="0">
+						<form id="pay_pword">
+							<input type="number" class="pay_pword_text" />
+							<ul class="pay_pword_list flex">
+								<li><b></b></li>
+								<li><b></b></li>
+								<li><b></b></li>
+								<li><b></b></li>
+								<li><b></b></li>
+								<li><b></b></li>
+							</ul>
+							<button type="submit">确定</button>
+						</form>
+					</div>
+				</dl>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>魔智点餐</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<!-- <script type="text/javascript" src="js/jquery.mobile.custom.min.js" ></script> -->
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript">
+			$(function(){
+				$('#indexBanner').swipeleft(function(){
+					$(this).carousel('next');
+				})
+				$('#indexBanner').swiperight(function(){
+					$(this).carousel('prev');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="conBox">
+			<div id="content">
+				<div id="indexTop">
+					<dl class="flex">
+						<dd class="search">
+							<span class="search_icon"></span>
+							<input type="text" placeholder="搜索品类" />
+						</dd>
+						<dd class="right">
+							<a href="#" class="user_icon"></a>
+						</dd>
+					</dl>
+				</div>
+				<div id="indexBanner" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/banner.png" />
+						</div>
+						<div class="item">
+							<img src="images/banner_img_01.png" />
+						</div>
+						<div class="item">
+							<img src="images/banner_img_01.png" />
+						</div>
+					</div>
+					<ol class="carousel-indicators flex">
+						<li data-target="#indexBanner" data-slide-to="0" class="active"></li>
+						<li data-target="#indexBanner" data-slide-to="1"></li>
+						<li data-target="#indexBanner" data-slide-to="2"></li>
+					</ol>
+				</div>
+				<div class="index_nav">
+					<dl class="flex">
+						<dd>
+							<a href="#">
+								
+									<img src="images/index_nav_icon_01.png" />
+								<p class="title">特色菜品</p>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<p class="icon">
+									<img src="images/index_nav_icon_02.png" />
+								</p>
+								<p class="title">包厢预订</p>
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<p class="icon">
+									<img src="images/index_nav_icon_03.png" />
+								</p>
+								<p class="title">菜品分类</p>
+							</a>
+						</dd>
+						<dd >
+							<a href="#">
+								<p class="icon">
+									<img src="images/index_nav_icon_04.png" />
+								</p>
+								<p class="title">口味</p>
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="indexBox">
+					<h3 class="indexBox_title">川菜</h3>
+					<div class="indexBox_list clear">
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+					</div>
+				</div>
+				<div class="indexBox">
+					<h3 class="indexBox_title">东北菜</h3>
+					<div class="indexBox_list clear">
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+					</div>
+				</div>
+				<div class="indexBox">
+					<h3 class="indexBox_title">粤菜</h3>
+					<div class="indexBox_list clear">
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+					</div>
+				</div>
+				<div class="indexBox">
+					<h3 class="indexBox_title">东北菜</h3>
+					<div class="indexBox_list clear">
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="#">
+								<dd class="img">
+									<img src="images/index_list_img_01.png" />
+									<p class="title">
+										香烤猪蹄
+									</p>
+								</dd>
+								<dd class="price">
+									￥31<span class="old">￥48</span>
+								</dd>
+							</a>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div id="nav">
+				<dl class="flex">
+					<dd>
+						<a href="#">
+							<span class="icon icon_01"></span>
+							特色菜品
+						</a>
+					</dd>
+					<dd>
+						<a href="#">
+							<span class="icon icon_02"></span>
+							推荐
+						</a>
+					</dd>
+					<dd>
+						<a href="#">
+							<span class="icon">
+								<i class="order_icon"></i>
+							</span>
+							我的订单
+						</a>
+					</dd>
+					<dd>
+						<a href="#">
+							<span class="icon icon_03"></span>
+							菜品分类
+						</a>
+					</dd>
+					<dd>
+						<a href="#">
+							<span class="icon icon_04"></span>
+							我的
+						</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</body>
+</html>

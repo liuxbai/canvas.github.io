@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>魔智点餐</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.mobile.custom.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/room.css" />
+		<script type="text/javascript">
+			$(function(){
+				$('.room_order_list dl').each(function(){
+					$(this).swipeleft(function(){
+						$(this).addClass('active');
+					})
+					$(this).swiperight(function(){
+						$(this).removeClass('active');
+					})
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="conBox">
+			<div id="subTop">
+				<dl class="flex">
+					<dd class="left">
+						<a href="javascript:history.back(-1);" class="return_bt"></a>
+					</dd>
+					<dd class="title flex">
+						包厢详情
+					</dd>
+					<dd class="right">
+						<a href="#" class="user_bt"></a>
+					</dd>
+				</dl>
+			</div>
+			<div id="content">
+				<div class="room">
+					<div class="room_con_img">
+						<img src="images/room_img_01.png" />
+					</div>
+					<div class="room_order">
+						<div class="room_order_menu">
+							<dl class="flex">
+								<dd>
+									<a href="#" class="flex">
+										<span class="icon_01"></span>包厢名称
+									</a>
+								</dd>
+								<dd>
+									<a href="#" class="flex">
+										<span class="icon_02"></span>用餐时间
+									</a>
+								</dd>
+								<dd>
+									<a href="#" class="flex">
+										<span class="icon_03"></span>请服务员
+									</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="room_order_list">
+							<dl class="flex">
+								<dd class="img">
+									<img src="images/room_img_01.png" />
+								</dd>
+								<dd class="text_con">
+									<p class="title">
+										长城包厢
+									</p>
+									<p class="time">
+										2016-01-01 19:30:00 
+									</p>
+									<ul class="score_list flex">
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<p class="score_num">
+										<span>9.7</span>
+									</p>
+								</dd>
+								<dd class="status">
+									已预订
+								</dd>
+								<dd class="bt">
+									<a href="#" class="flex">
+										切换包厢
+									</a>
+								</dd>
+							</dl>
+							<dl class="flex">
+								<dd class="img">
+									<img src="images/room_img_01.png" />
+								</dd>
+								<dd class="text_con">
+									<p class="title">
+										长城包厢
+									</p>
+									<p class="time">
+										2016-01-01 19:30:00 
+									</p>
+									<ul class="score_list flex">
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<p class="score_num">
+										<span>9.7</span>
+									</p>
+								</dd>
+								<dd class="status">
+									已消费
+								</dd>
+								<dd class="bt">
+									<a href="#" class="flex">
+										删除
+									</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

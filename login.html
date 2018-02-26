@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>魔智点餐</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.mobile.custom.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/user.css" />
+		<script type="text/javascript">
+			$(function(){
+				$('.form_list').submit(function(){
+					var uname = $('input[name=uname]');
+					var pword = $('input[name=pword]');
+					var uname_val = $.trim(uname.val());
+					var pword_val = $.trim(pword.val());
+					if(uname_val.length==0){
+						$('.errorHint').addClass('show');
+						$('.errorHint').find('dd').text('请输入账号');
+						return false;
+					}
+					if(pword_val.length==0){
+						$('.errorHint').addClass('show');
+						$('.errorHint').find('dd').text('请输入密码');
+						return false;
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="conBox">
+			<div id="subTop">
+				<dl class="flex">
+					<dd class="left">
+						<a href="javascript:history.back(-1);" class="return_bt"></a>
+					</dd>
+					<dd class="title flex">
+						登录界面
+					</dd>
+					<dd class="right">
+						<a href="#" class="user_bt"></a>
+					</dd>
+				</dl>
+			</div>
+			<div id="content" class="userCon">
+				<div class="login">
+					<div class="userPhoto"></div>
+					<div class="form_list">
+						<form>
+							<dl class="flex">
+								<dd class="icon flex">
+									<span class="user_icon"></span>
+								</dd>
+								<dd class="inputTxt">
+									<input type="text" name="uname" placeholder="账号、邮箱或手机号" />
+								</dd>
+							</dl>
+							<dl class="flex">
+								<dd class="icon flex">
+									<span class="pword_icon"></span>
+								</dd>
+								<dd class="inputTxt">
+									<input type="password" name="pword" placeholder="密码" />
+								</dd>
+							</dl>
+							<dl class="errorHint">
+								<dd>
+									账号或密码错误
+								</dd>
+							</dl>
+							<dl class="bt">
+								<dd>
+									<button type="submit">登录</button>
+								</dd>
+							</dl>
+							<dl class="text">
+								<dd class="flex">
+									<a href="#">立即注册</a>
+									<label class="flex">
+										<input type="checkbox" />
+										<span class="circle"></span>
+										记住登录密码
+									</label>
+								</dd>
+							</dl>
+						</form>
+					</div>
+					<div class="login_third">
+						<p class="text">
+							没有账号？点击快速登录
+						</p>
+						<dl class="flex">
+							<dd>
+								<a href="#" class="wechat_icon"></a>
+							</dd>
+							<dd>
+								<a href="#" class="weibo_icon"></a>
+							</dd>
+							<dd>
+								<a href="#" class="qq_icon"></a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>魔智点餐</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.mobile.custom.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/user.css" />
+		<script type="text/javascript">
+			$(function(){
+				$('.phone_validate_list').submit(function(){
+					var phone = $('input[name=phone]');
+					var code_text = $('input[name=code_text]');
+					var phone_val = $.trim(phone.val());
+					var code_text_val = $.trim(code_text.val());
+					if(phone_val.length==0){
+						$('.errorHint').addClass('show');
+						$('.errorHint').text('请输入手机号');
+						return false;
+					}
+					if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(phone_val)){
+						$('.errorHint').addClass('show');
+						$('.errorHint').text('手机格式不正确');
+						return false;
+					}
+					if(code_text_val.length==0){
+						$('.errorHint').addClass('show');
+						$('.errorHint').text('请输入验证码');
+						return false;
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="conBox">
+			<div id="subTop">
+				<dl class="flex">
+					<dd class="left">
+						<a href="javascript:history.back(-1);" class="return_bt"></a>
+					</dd>
+					<dd class="title flex">
+						手机验证
+					</dd>
+					<dd class="right">
+						<a href="#" class="user_bt"></a>
+					</dd>
+				</dl>
+			</div>
+			<div id="content" class="userCon">
+				<div class="phone_validate">
+					<div class="phone_validate_list">
+						<dl>
+							<form>
+								<dd class="code flex">
+									<input type="text" placeholder="请输入手机号" name="phone" />
+									<button type="button">发送验证码</button>
+								</dd>
+								<dd>
+									<input type="text" placeholder="请输入验证码" name="code_text" />
+								</dd>
+								<dd class="errorHint">
+									
+								</dd>
+								<dd class="bt">
+									<button type="submit">确认登录</button>
+								</dd>
+							</form>
+						</dl>
+					</div>
+					<div class="login_third">
+						<p class="text">
+							没有账号？点击快速登录
+						</p>
+						<dl class="flex">
+							<dd>
+								<a href="#" class="wechat_icon"></a>
+							</dd>
+							<dd>
+								<a href="#" class="weibo_icon"></a>
+							</dd>
+							<dd>
+								<a href="#" class="qq_icon"></a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

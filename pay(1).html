@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>魔智点餐</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.mobile.custom.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/pay.css" />
+	</head>
+	<body>
+		<div id="conBox">
+			<div id="subTop">
+				<dl class="flex">
+					<dd class="left">
+						<a href="javascript:history.back(-1);" class="return_bt"></a>
+					</dd>
+					<dd class="title flex">
+						支付中心
+					</dd>
+					<dd class="right">
+						<a href="#" class="user_bt"></a>
+					</dd>
+				</dl>
+			</div>
+			<div id="content" class="payCon">
+				<div class="pay">
+					<div class="user_info">
+						<div class="user_photo">
+							<img src="images/user_photo_01.png" />
+						</div>
+						<p class="name">
+							朗捷软件
+						</p>
+						<p class="phone">
+							13160660803
+						</p>
+						<p class="product_type">
+							包厢预订
+						</p>
+						<div class="order_info">
+							<p>用餐时间：</p>
+							<p>订单备注：</p>
+						</div>
+					</div>
+					<div class="pay_list">
+						<p class="title">选择付款方式</p>
+						<dl>
+							<label class="flex">
+								<dd class="left flex">
+									<span class="alipay_icon"></span>支付宝付款
+								</dd>
+								<dd class="radioBox">
+									<input type="radio" name="payType" checked="checked" />
+									<span class="circle"></span>
+								</dd>
+							</label>
+						</dl>
+						<dl>
+							<label class="flex">
+								<dd class="left flex">
+									<span class="wechat_icon"></span>微信支付
+								</dd>
+								<dd class="radioBox">
+									<input type="radio" name="payType" />
+									<span class="circle"></span>
+								</dd>
+							</label>
+						</dl>
+						<dl>
+							<label class="flex">
+								<dd class="left flex">
+									<span class="balance_icon"></span>余额支付
+								</dd>
+								<dd class="radioBox">
+									<input type="radio" name="payType" />
+									<span class="circle"></span>
+								</dd>
+							</label>
+						</dl>
+						<div class="balance_text">
+							<h3 class="title flex">
+								<span class="balance_icon"></span>账户支付
+							</h3>
+							<dl class="balance_text_list flex">
+								<dd>
+									<p class="name">账户余额</p>
+									<p class="price">
+										¥329.00
+									</p>
+								</dd>
+								<dd>
+									<p class="name">需支付金额</p>
+									<p class="price">
+										¥100.00
+									</p>
+								</dd>
+								<dd>
+									<p class="name">
+										支付后余额
+										<span class="select_icon"></span>
+									</p>
+									<p class="price">
+										¥229.00
+									</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="text">
+							<p class="big">温馨提示</p>
+							<p class="small">
+								仅限支付宝支付 红包可优惠1元 积分可低0.5元
+							</p>
+						</div>
+						<div class="pay_bottom_bt">
+							<button type="submit">下单</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layerBg show" id="payPword">
+			<div class="con hint_con payPword">
+				<form>
+					<dl>
+						<dd class="title flex">
+							请输入支付密码
+						</dd>
+						<dd class="inputTxt flex">
+							支付密码
+							<input type="password" name="pword" />
+						</dd>
+						<dd class="bt_list flex">
+							<button type="submit">确定</button>
+						</dd>
+					</dl>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,313 @@
+#content{
+	background-color: #FFFFFF;
+}
+#content.payCon{
+	background: url(../images/pay_bg.png) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.pay{
+	padding-bottom: 1rem;
+}
+.user_info{
+	padding: 0.16rem 0.2rem;
+	border-bottom: 1px solid #CCCCCC;
+}
+.user_info .user_photo{
+	width: 1.54rem;
+	height: 1.54rem;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 0.2rem;
+}
+.user_info .user_photo img{
+	width: 100%;
+	height: 100%;
+}
+.user_info p{
+	font-size: 0.22rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.user_info p.name{
+	margin-bottom: 0.15rem;
+}
+.user_info p.phone{
+	margin-bottom: 0.3rem;
+}
+.user_info p.product_type{
+	width: 100%;
+	height: 0.68rem;
+	line-height: 0.68rem;
+	border-radius: 0.25rem;
+	background-color: #572f7e;
+	font-size: 0.28rem;
+}
+.user_info .order_info p{
+	margin-top: 0.15rem;
+	font-size: 0.28rem;
+	text-align: left;
+	padding: 0 0.35rem;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	border-radius: 0.24rem;
+	background: rgba(255,255,255,0.24);
+}
+
+.pay_list{
+	padding: 0.2rem;
+}
+.pay_list .title{
+	font-size: 0.28rem;
+	color: #FFFFFF;
+	margin-bottom: 0.28rem;
+}
+.pay_list dl{
+	margin-bottom: 0.24rem;
+}
+.pay_list dl label{
+	width: 100%;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+}
+.pay_list dl dd.left{
+	-webkit-align-items: center;
+	align-items: center;
+	font-size: 0.28rem;
+	color: #FFFFFF;
+}
+.pay_list dl dd.left span{
+	display: block;
+	width: 0.59rem;
+	height: 0.59rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 0.3rem;
+}
+.pay_list dl dd span.alipay_icon{
+	background-image: url(../images/alipay_icon_02.png);
+}
+.pay_list dl dd span.wechat_icon{
+	background-image: url(../images/wechat_icon_01.png);
+}
+.pay_list dl dd span.balance_icon{
+	background-image: url(../images/balance_icon_01.png);
+}
+.pay_list dl dd.radioBox input[type='radio']{
+	display: none;
+}
+.pay_list dl dd.radioBox span.circle{
+	display: block;
+	width: 0.46rem;
+	height: 0.46rem;
+	background: url(../images/radio_icon_02.png) no-repeat;
+	background-size: cover;
+}
+.pay_list dl dd.radioBox input[type='radio']:checked + span.circle{
+	background-image: url(../images/radio_icon_02_checked.png);
+}
+.pay_list .text{
+	width: 100%;
+	padding: 0.12rem 0.35rem;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 0.24rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.pay_list .text p.big{
+	font-size: 0.24rem;
+}
+.pay_list .text p.small{
+	font-size: 0.2rem;
+	line-height: 1.5;
+}
+
+.pay_bottom_bt{
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 0.1rem;
+}
+.pay_bottom_bt button{
+	width: 100%;
+	height: 0.7rem;
+	border: none;
+	border-top-left-radius: 0.1rem;
+	border-top-right-radius: 0.1rem;
+	background: #9F2AA4;
+	font-size: 0.38rem;
+	color: #FFFFFF;
+}
+
+.red_packet{
+	width: 100%;
+	height: 4.38rem;
+	background: url(../images/pay_complete_img_01.png) no-repeat;
+	background-size: cover;
+	padding-top: 0.78rem;
+	position: relative;
+}
+.red_packet p.text{
+	padding-left: 2.2rem;
+	color: #FFFFFF;
+	font-size: 0.28rem;
+	margin-bottom: 0.95rem;
+}
+.red_packet p.price{
+	padding-left: 2.4rem;
+	font-size: 0.34rem;
+	color: #FFFFFF;
+}
+.red_packet p.price span.big{
+	font-size: 0.88rem;
+}
+.red_packet p.bt{
+	padding-left: 2.38rem;
+	margin-top: 0.1rem;
+}
+.red_packet p.bt a{
+	display: inline-block;
+	padding: 0.07rem 0.18rem;
+	border-radius: 0.08rem;
+	background-color: #FFFFFF;
+	font-size: 0.22rem;
+	color: #df3121;
+}
+
+.back_bt{
+	text-align: center;
+	margin-top: 0.4rem;
+}
+.back_bt a{
+	display: inline-block;
+	width: 5.3rem;
+	text-align: center;
+	height: 0.96rem;
+	line-height: 0.96rem;
+	font-size: 0.45rem;
+	color: #e94b4e;
+	background-color: #fad945;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.08rem;
+	text-decoration: none;
+}
+.back_bt a::before,
+.back_bt a::after{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 0.08rem;
+	background-color: #f7b81a;
+	position: absolute;
+	left: 0;
+}
+.back_bt a::before{
+	display: none;
+	top: 0;
+}
+.back_bt a::after{
+	bottom: 0;
+}
+.back_bt a:hover::before{
+	display: block;
+}
+.back_bt a:hover::after{
+	display: none;
+}
+
+.payPword{
+	width: 5.6rem;
+	height: 3.7rem;
+}
+.payPword dl dd.title{
+	height: 0.82rem;
+}
+.payPword dl dd.inputTxt{
+	height: 1.62rem;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.24rem;
+}
+.payPword dl dd.inputTxt input{
+	margin-left: 0.1rem;
+	width: 3.46rem;
+	height: 0.68rem;
+	border: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	border-radius: 0.08rem;
+	padding: 0 10px;
+}
+.payPword dl dd.bt_list button{
+	background-color: #9F2AA4;
+	border: none;
+	border-radius: 0.1rem;
+	width: 4.38rem;
+	height: 0.74rem;
+	font-size: 0.28rem;
+	color: #FFFFFF;
+}
+
+.balance_text{
+	width: 6rem;
+	background: rgba(255,255,255,0.4);
+	border-radius: 0.24rem;
+	margin-bottom: 0.3rem;
+}
+.balance_text h3.title{
+	padding: 0 0.24rem;
+	height: 0.66rem;
+	-webkit-align-items: center;
+	align-items: center;
+	border-bottom: 1px solid rgba(175,170,166,0.5);
+	font-size: 0.24rem;
+	margin: 0;
+}
+.balance_text h3.title span.balance_icon{
+	display: inline-block;
+	width: 0.35rem;
+	height: 0.4rem;
+	background: url(../images/balance_icon_03.png) no-repeat;
+	background-size: cover;
+	margin-right: 0.15rem;
+}
+.balance_text dl.balance_text_list{
+	-webkit-align-items: center;
+	-webkit-justify-content: space-around;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.16rem 0.4rem;
+}
+.balance_text dl.balance_text_list dd{
+	text-align: center;
+}
+.balance_text dl.balance_text_list dd p.name{
+	color: #FFFFFF;
+	font-size: 0.24rem;
+	margin-bottom: 0.15rem;
+	position: relative;
+}
+.balance_text dl.balance_text_list dd p.name span.select_icon{
+	display: inline-block;
+	width: 0.24rem;
+	height: 0.17rem;
+	background: url(../images/select_icon_01.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: -0.34rem;
+}
+.balance_text dl.balance_text_list dd p.price{
+	font-size: 0.24rem;
+	color: #f7bf70;
+}

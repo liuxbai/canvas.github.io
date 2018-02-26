@@ -1,0 +1,990 @@
+#content{
+	background-color: #FFFFFF;
+}
+#content.userCon{
+	background: url(../images/user_bg.png) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.login{
+	position: relative;
+}
+.login .userPhoto{
+	width: 1.96rem;
+	height: 1.96rem;
+	border-radius: 50%;
+	border: 2px solid #FFFFFF;
+	background: url(../images/camera_icon_01.png) center no-repeat;
+	background-size: 0.8rem 0.57rem;
+	margin: 0.54rem auto 0.95rem;
+}
+.login .form_list{
+	padding: 0 0.4rem 2rem;
+}
+.login .form_list dl{
+	margin-bottom: 0.35rem;
+}
+.login .form_list dl.flex{
+	-webkit-align-items: center;
+	align-items: center;
+	border-bottom: 2px solid #FFFFFF;
+	padding: 0.1rem 0;
+}
+.login .form_list dl dd.icon{
+	width: 0.54rem;
+	position: relative;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.login .form_list dl dd.icon::after{
+	display: block;
+	content: '';
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	height: 0.4rem;
+	background-color: #FFFFFF;
+}
+.login .form_list dl dd.icon span{
+	display: block;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.login .form_list dl dd.icon span.user_icon{
+	background-image: url(../images/user_icon_03.png);
+	width: 0.35rem;
+	height: 0.41rem;
+}
+.login .form_list dl dd.icon span.pword_icon{
+	background-image: url(../images/pword_icon_01.png);
+	width: 0.26rem;
+	height: 0.45rem;
+}
+.login .form_list dl dd.inputTxt{
+	width: calc(100% - 0.54rem);
+}
+.login .form_list dl dd.inputTxt input{
+	width: 100%;
+	height: 0.48rem;
+	padding: 0 0.15rem;
+	font-size: 0.3rem;
+	border: none;
+	background: none;
+	color: #FFFFFF;
+}
+.login .form_list dl dd.inputTxt input::-webkit-input-placeholder{
+	color: #FFFFFF;
+}
+.login .form_list dl.errorHint{
+	opacity: 0;
+	visibility: hidden;
+}
+.login .form_list dl.errorHint.show{
+	opacity: 1;
+	visibility: visible;
+}
+.login .form_list dl.errorHint dd{
+	text-align: center;
+	font-size: 0.24rem;
+	background: rgba(255,0,0,0.6);
+	padding: 0.2rem 0.15rem;
+	color: #FFFFFF;
+	border-radius: 0.08rem;
+}
+.login .form_list dl.bt dd button{
+	width: 100%;
+	height: 0.68rem;
+	font-size: 0.38rem;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0.08rem;
+	background: rgba(255,255,255,0.2);
+}
+.login .form_list dl.text{
+	font-size: 0.24rem;
+	color: #FFFFFF;
+	padding: 0 0.24rem;
+}
+.login .form_list dl.text dd{
+	width: 100%;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+}
+.login .form_list dl.text dd a{
+	color: #FFFFFF;
+	padding-bottom: 0.06rem;
+	border-bottom: 1px solid #FFFFFF;
+}
+.login .form_list dl.text dd label{
+	font-weight: normal;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.login .form_list dl.text dd label input{
+	display: none;
+}
+.login .form_list dl.text dd label span.circle{
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;
+	background: url(../images/radio_icon_03.png) no-repeat;
+	background-size: cover;
+	margin-right: 0.16rem;
+}
+.login .form_list dl.text dd label input:checked + span.circle{
+	background-image: url(../images/radio_icon_03_active.png);
+}
+
+.login_third{
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 0.2rem 0.3rem;
+}
+.login_third p.text{
+	text-align: center;
+	font-size: 0.28rem;
+	color: #FFFFFF;
+	margin-bottom: 0.43rem;
+}
+.login_third dl{
+	-webkit-align-items: center;
+	-webkit-justify-content: space-around;
+	align-items: center;
+	justify-content: space-around;
+}
+.login_third dl dd a{
+	display: block;
+	width: 0.9rem;
+	height: 0.9rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.login_third dl dd a.wechat_icon{
+	background-image: url(../images/wechat_icon_02.png);
+}
+.login_third dl dd a.weibo_icon{
+	background-image: url(../images/weibo_icon_01.png);
+}
+.login_third dl dd a.qq_icon{
+	background-image: url(../images/qq_icon_01.png);
+}
+
+.user_center{
+	position: relative;
+	padding-bottom: 4.38rem;
+}
+.user_center_top{
+	height: 4rem;
+	background: url(../images/user_center_top_bg.png) no-repeat;
+	background-size: cover;
+	padding-top: 0.62rem;
+}
+.user_center_top .userPhoto{
+	width: 1.96rem;
+	height: 1.96rem;
+	border-radius: 50%;
+	border: 0.08rem solid #FFFFFF;
+	margin: 0 auto 0.14rem;
+	overflow: hidden;
+}
+.user_center_top .userPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.user_center_top .text_con{
+	text-align: center;
+}
+.user_center_top .text_con p.name{
+	font-size: 0.28rem;
+	color: #FFFFFF;
+	margin-bottom: 0.12rem;
+}
+.user_center_top .text_con p.tel_text{
+	-webkit-align-items: center;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	font-size: 0.28rem;
+}
+.user_center_top .text_con p.tel_text span.tel_icon{
+	display: block;
+	width: 0.34rem;
+	height: 0.34rem;
+	background: url(../images/tel_icon_01.png) no-repeat;
+	background-size: cover;
+	margin-right: 0.16rem;
+}
+.user_info_list{
+	height: 1.02rem;
+	border-top: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+}
+.user_info_list dl{
+	width: 100%;
+	height: 100%;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.user_info_list dl dd{
+	width: calc(100% / 3);
+	height: 100%;
+	border-left: 1px solid #E6E6E6;
+}
+.user_info_list dl dd:first-child{
+	border-left: none;
+}
+.user_info_list dl dd a{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-size: 0.28rem;
+	color: #847f7f;
+}
+
+.user_center_nav{
+	/*background: url(../images/user_center_nav_bg.png) no-repeat;*/
+	background-size: cover;
+	height: 4.37rem;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.user_center_nav ul{
+    list-style-type:none;
+	padding:0px;
+	margin:0px;
+	
+}
+.user_center_nav ul li{
+	/*width: 100%;*/
+	height: 0.65rem;
+	line-height: 0.65rem;
+	background:url(../images/collect_icon.png),url(../images/expand_icon.png);
+	background-repeat: no-repeat;
+	background-position: 0.2rem,5.8rem;
+	background-size: 0.4rem 0.4rem;
+	padding-left: 0.5rem;
+	text-indent: 0.3rem;
+	border-bottom: 1px solid #eeeeee;
+	/*position: relative;*/
+
+}
+.user_center_nav ul li:nth-child(2){
+	background:url(../images/order_icon.png),url(../images/expand_icon.png);
+	background-repeat: no-repeat;
+	background-position: 0.2rem,5.8rem;
+	background-size: 0.4rem 0.4rem;
+}
+.user_center_nav ul li:nth-child(3){
+	background:url(../images/box_icon.png),url(../images/expand_icon.png);
+	background-repeat: no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: 0.2rem,5.8rem;
+}
+
+/*.user_center_nav dl{
+	height: 100%;
+}
+.user_center_nav dl dd{
+	height: calc(100% / 3);
+	padding-top: 0.1rem;
+	border-top: 2px solid #FFFFFF;
+}
+.user_center_nav dl dd a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.user_center_nav dl dd p.icon{
+	margin-bottom: 0.1rem;
+}
+.user_center_nav dl dd p.icon span{
+	
+	width: 0.7rem;
+	height: 0.32rem;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.user_center_nav dl dd p.icon span::before,
+.user_center_nav dl dd p.icon span::after{
+	display: block;
+	content: '';
+	width: 1.1rem;
+	height: 1px;
+	background-color: rgba(255,255,255,0.3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.user_center_nav dl dd p.icon span::before{
+	right: 0.7rem;
+}
+.user_center_nav dl dd p.icon span::after{
+	left: 0.7rem;
+}
+.user_center_nav dl dd p.icon span.like_icon{
+	background-image: url(../images/like_ icon_01.png);
+	background-size: 0.3rem 0.26rem;
+}
+.user_center_nav dl dd p.icon span.sun_icon{
+	background-image: url(../images/sun_icon_01.png);
+	background-size: 0.3rem;
+}
+.user_center_nav dl dd p.icon span.cook_icon{
+	background-image: url(../images/cook_icon_01.png);
+	background-size: 0.32rem 0.3rem;
+}
+
+.user_center_nav dl dd p.text{
+	font-size: 0.22rem;
+	
+}
+*/
+
+.phone_validate{
+	height: 100%;
+	position: relative;
+}
+.phone_validate_list{
+	padding: 0.4rem 0.2rem;
+}
+.phone_validate_list dl dd{
+	margin-bottom: 0.2rem;
+}
+.phone_validate_list dl dd input{
+	width: 3.24rem;
+	height: 0.56rem;
+	text-align: center;
+	border: none;
+	border-radius: 0.08rem;
+	background-color: #f0eeee;
+	font-size: 0.3rem;
+}
+.phone_validate_list dl dd.code button{
+	width: 2.15rem;
+	height: 0.56rem;
+	background-color: #d6d3d4;
+	border: none;
+	border-radius: 0.08rem;
+	margin-left: 0.36rem;
+	box-shadow: 0 1px 8px rgba(0,0,0,0.4);
+	font-size: 0.3rem;
+	color: #484848;
+}
+.phone_validate_list dl dd.bt{
+	margin-top: 0.48rem;
+}
+.phone_validate_list dl dd.bt button{
+	width: 100%;
+	height: 0.68rem;
+	border: none;
+	border-radius: 0.08rem;
+	background-color: rgba(255,255,255,0.4);
+	color: #FFFFFF;
+	font-size: 0.38rem;
+}
+.phone_validate_list dl dd.errorHint{
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+	font-size: 0.24rem;
+	background: rgba(255,0,0,0.6);
+	padding: 0.2rem 0.15rem;
+	color: #FFFFFF;
+	border-radius: 0.08rem;
+}
+.phone_validate_list dl dd.errorHint.show{
+	opacity: 1;
+	visibility: visible;
+}
+
+.colle_img,
+.colle_img img{
+	width: 100%;
+}
+.colle_list dl{
+	padding: 0.2rem;
+	position: relative;
+	border-bottom: 1px solid #CCCCCC;
+}
+.colle_list dl dd.img{
+	width: 1.7rem;
+	height: 1.7rem;
+}
+.colle_list dl dd.img img{
+	width: 100%;
+	height: 100%;
+}
+.colle_list dl dd.text_con{
+	width: calc(100% - 1.7rem - 1rem);
+	padding-left: 0.28rem;
+}
+.colle_list dl dd.text_con .title{
+	font-size: 0.22rem;
+	color: #333333;
+	margin-bottom: 0.1rem;
+}
+.colle_list dl dd.text_con .title a{
+	color: #333333;
+}
+.colle_list dl dd.text_con ul.score_list{
+	margin-bottom: 0.1rem;
+}
+.colle_list dl dd.text_con ul.score_list li{
+	display: block;
+	width: 0.28rem;
+	height: 0.2rem;
+	background: url(../images/score_icon_01.png) no-repeat;
+	background-size: cover;
+}
+.colle_list dl dd.text_con .sales_num{
+	margin-bottom: 0.1rem;
+	color: #999999;
+	font-size: 0.18rem;
+}
+.colle_list dl dd.price{
+	width: 1rem;
+	-webkit-align-items: center;
+	-webkit-justify-content: flex-end;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 0.4rem;
+	color: #FF3366;
+}
+.colle_list dl dd.del{
+	width: 1.12rem;
+	height: calc(100% - 0.4rem);
+	position: absolute;
+	top: 0.2rem;
+	right: -1.12rem;
+}
+.colle_list dl dd.del a{
+	width: 100%;
+	height: 100%;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	background-color: #E5391A;
+	font-size: 0.34rem;
+	text-decoration: none;
+}
+.colle_list dl dd.del a:hover{
+	background-color: #ff5252;
+}
+.colle_list dl.active dd{
+	transform: translateX(-1.12rem);
+}
+
+.user_balance dl.user_balance_info{
+	height: 0.95rem;
+	border-bottom: 1px solid #e1e1e1;
+}
+.user_balance dl.user_balance_info dd{
+	width: 50%;
+	height: 100%;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.user_balance dl.user_balance_info dd span.balance_icon{
+	display: block;
+	width: 0.26rem;
+	height: 0.28rem;
+	background: url(../images/balance_icon_02.png) no-repeat;
+	background-size: cover;
+	margin-right: 0.12rem;
+}
+.user_balance dl.user_balance_info dd.left{
+	font-size: 0.24rem;
+	color: #333333;
+	background-color: #EEEEEE;
+}
+.user_balance dl.user_balance_info dd.right{
+	background-color: #FAFAFA;
+	font-size: 0.3rem;
+	color: #e9133b;
+}
+.user_balance dl.bt_list{
+	margin-top: 0.4rem;
+	padding: 0 0.2rem;
+}
+.user_balance dl.bt_list dd{
+	width: 100%;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+}
+.user_balance dl.bt_list dd a{
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 2.34rem;
+	height: 0.63rem;
+	font-size: 0.3rem;
+	color: #666666;
+	text-decoration: none;
+	background-color: #EEEEEE;
+	border-radius: 0.08rem;
+	border: 1px solid #CCCCCC;
+}
+
+.withdraw_list{
+	padding: 0.35rem 0.2rem;
+}
+.withdraw_list dl{
+	width: 100%;
+	margin-top: 0.35rem;
+}
+.withdraw_list dl:first-child{
+	margin-top: 0;
+}
+.withdraw_list dl.inputBox{
+	height: 0.7rem;
+	background-color: #fcfcfc;
+	border: 1px solid #CCCCCC;
+	border-radius: 0.08rem;
+}
+.withdraw_list dl.inputBox dd{
+	height: 100%;
+}
+.withdraw_list dl.inputBox dd.icon{
+	width: 0.54rem;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.withdraw_list dl.inputBox dd.icon span.user_icon{
+	display: block;
+	background: url(../images/user_icon_04.png) no-repeat;
+	background-size: cover;
+	width: 0.22rem;
+	height: 0.25rem;
+}
+.withdraw_list dl.inputBox dd.inputTxt{
+	width: calc(100% - 0.54rem);
+}
+.withdraw_list dl.inputBox dd.inputTxt input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: none;
+	padding-right: 0.15rem;
+	font-size: 0.24rem;
+}
+.withdraw_list dl.price_con{
+	background-color: #EEEEEE;
+	padding: 0.15rem;
+	border-radius: 0.1rem;
+}
+.withdraw_list dl.price_con dd.text{
+	font-size: 0.24rem;
+	margin-bottom: 0.15rem;
+}
+.withdraw_list dl.price_con dd.price{
+	align-items: center;
+	margin-bottom: 0.15rem;
+}
+.withdraw_list dl.price_con dd.price span.price_icon{
+	display: block;
+	font-size: 0.4rem;
+	width: 0.6rem;
+	text-align: center;
+}
+.withdraw_list dl.price_con dd.price input{
+	width: calc(100% - 0.6rem);
+	height: 100%;
+	border: none;
+	font-size: 0.4rem;
+	padding: 0.05rem 0.15rem;
+	border-radius: 0.08rem;
+}
+.withdraw_list dl.price_con dd.balance_text{
+	font-size: 0.14rem;
+	text-align: right;
+}
+.withdraw_list dl.price_con dd.balance_text span.red{
+	color: #f13d3d;
+}
+.withdraw_list dl.price_con dd.balance_text i{
+	font-style: normal;
+}
+.withdraw_list dl.bt dd button{
+	width: 100%;
+	height: 0.7rem;
+	border-radius: 0.08rem;
+	font-size: 0.28rem;
+	color: #FFFFFF;
+	background-color: #9F2AA4;
+	border: none;
+}
+.withdraw_list dl.errorHint{
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+	font-size: 0.24rem;
+	background: rgba(255,0,0,0.6);
+	padding: 0.2rem 0.15rem;
+	color: #FFFFFF;
+	border-radius: 0.08rem;
+}
+.withdraw_list dl.errorHint.show{
+	opacity: 1;
+	visibility: visible;
+}
+
+.user_points_top{
+	padding: 0.2rem;
+	border-bottom: 1px solid #E3E3E3;
+}
+.user_points_top dl{
+	width: 100%;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+}
+.user_points_top dl dd.left{
+	font-size: 0.28rem;
+	color: #161616;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.user_points_top dl dd.left .img{
+	width: 0.76rem;
+	height: 0.76rem;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 0.14rem;
+}
+.user_points_top dl dd.left .img img{
+	width: 100%;
+	height: 100%;
+}
+.user_points_top dl dd.num{
+	font-size: 0.26rem;
+	color: #666666;
+}
+.user_points_list{
+	padding: 0.25rem 0.45rem 1rem;
+}
+.user_points_list dl{
+	width: 2.4rem;
+	float: left;
+	margin-bottom: 0.5rem;
+}
+.user_points_list dl:nth-child(even){
+	float: right;
+}
+.user_points_list dl label{
+	display: block;
+	font-weight: normal;
+}
+.user_points_list dl dd.img{
+	width: 100%;
+	height: 2.45rem;
+	margin-bottom: 0.14rem;
+}
+.user_points_list dl dd.img img{
+	width: 100%;
+	height: 100%;
+}
+.user_points_list dl dd.text{
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.26rem;
+	color: #582c80;
+}
+.user_points_list dl dd.text .radioBox input{
+	display: none;
+}
+.user_points_list dl dd.text .radioBox span.square{
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;
+	background: url(../images/radio_icon_03.png) no-repeat;
+	background-size: cover;
+}
+.user_points_list dl dd.text .radioBox input:checked + span.square{
+	background-image: url(../images/radio_icon_03_active.png);
+}
+.user_points_bt{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0.08rem;
+	background-color: #FFFFFF;
+	z-index: 1;
+}
+.user_points_bt button{
+	width: 100%;
+	height: 0.88rem;
+	border: none;
+	background-color: #9F2AA4;
+	border-radius: 0.08rem;
+	font-size: 0.38rem;
+	color: #FFFFFF;
+}
+
+.user_gift_list{
+	padding-bottom: 1rem;
+}
+.user_gift_list dl{
+	padding: 0.2rem;
+	border-bottom: 1px solid #E3E3E3;
+}
+.user_gift_list dl dd.img{
+	width: 1.92rem;
+	height: 1.92rem;
+	float: left;
+	position: relative;
+}
+.user_gift_list dl dd.img img{
+	width: 100%;
+	height: 100%;
+}
+.user_gift_list dl dd.img .text{
+	width: 0.74rem;
+	height: 0.74rem;
+	padding-left: 0.06rem;
+	padding-top: 0.09rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	font-size: 0.3rem;
+	color: #FFFFFF;
+}
+.user_gift_list dl dd.img .text span{
+	position: relative;
+	z-index: 1;
+}
+.user_gift_list dl dd.img .text::after{
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-top: 0.74rem solid #e86ba2;
+	border-right: 0.74rem solid transparent;
+}
+.user_gift_list dl dd.text_con{
+	width: calc(100% - 1.92rem);
+	float: left;
+	padding-left: 0.2rem;
+	padding-top: 0.2rem;
+}
+.user_gift_list dl dd.text_con p.title{
+	font-size: 0.22rem;
+	line-height: 1.5;
+	color: #333333;
+	margin-bottom: 0.1rem;
+}
+.user_gift_list dl dd.text_con ul.score_list{
+	margin-bottom: 0.2rem;
+}
+.user_gift_list dl dd.text_con ul.score_list li{
+	display: block;
+	background: url(../images/score_icon_01.png) no-repeat;
+	background-size: cover;
+	width: 0.26rem;
+	height: 0.2rem;
+}
+.user_gift_list dl dd.text_con .text{
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.2rem;
+	color: #FF3366;
+}
+.user_gift_list dl dd.text_con .text a{
+	font-size: 0.26rem;
+	color: #999999;
+}
+
+.user_points_rule .img{
+	width: 100%;
+	border-bottom: 1px solid #999999;
+	margin-bottom: 0.6rem;
+}
+.user_points_rule .img img{
+	width: 100%;
+}
+.user_points_rule .text_con{
+	padding: 0 0.2rem;
+}
+.user_points_rule .text_con p.text{
+	font-size: 0.3rem;
+	line-height: 1.4;
+	color: #4a4a4a;
+}
+.user_points_rule p.bt{
+	margin: 0.8rem 0;
+	text-align: center;
+}
+.user_points_rule p.bt a{
+	display: inline-block;
+	width: 3.14rem;
+	text-align: center;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	color: #4A4A4A;
+	border-radius: 0.16rem;
+	border: 1px solid #b4b4b4;
+	background-color: #ececec;
+	text-decoration: none;
+}
+
+.user_points_record .record_top{
+	width: 100%;
+	height: 2.74rem;
+	position: relative;
+	padding: 0.15rem 0.2rem;
+	background: url(../images/record_bg_01.png) no-repeat;
+	background-size: cover;
+	font-size: 0.3rem;
+	color: #FFFFFF;
+}
+.user_points_record .record_top .num{
+	display: block;
+	width: 1.8rem;
+	height: 1.8rem;
+	text-align: center;
+	line-height: 1.8rem;
+	background: url(../images/record_num_bg_01.png) no-repeat;
+	background-size: cover;
+	font-size: 0.54rem;
+	color: #FFFFFF;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 1;
+}
+.user_points_record .record_nav{
+	height: 1.12rem;
+	width: 100%;
+}
+.user_points_record .record_nav dl{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.user_points_record .record_nav dl::after{
+	display: block;
+	content: '';
+	width: 1px;
+	height: 0.52rem;
+	background-color: #e4e4e4;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.user_points_record .record_nav dl dd{
+	width: 50%;
+	height: 100%;
+	border-left: 1px solid transparent;
+}
+.user_points_record .record_nav dl dd:first-child{
+	border-left: none;
+}
+.user_points_record .record_nav dl dd a{
+	width: 100%;
+	height: 100%;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.26rem;
+	color: #333333;
+	text-decoration: none;
+}
+.user_points_record .record_nav dl dd a span{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-right: 0.2rem;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.user_points_record .record_nav dl dd a span.shop_icon{
+	background-image: url(../images/shop_icon_01.png);
+	background-size: 0.25rem 0.24rem;
+	background-color: #fdbd63;
+}
+.user_points_record .record_nav dl dd a span.record_icon{
+	background-image: url(../images/record_icon_01.png);
+	background-size: 0.24rem 0.23rem;
+	background-color: #8ece74;
+}
+.user_points_record .record_list{
+	padding: 0 0.2rem;
+}
+.user_points_record .record_list dl{
+	padding: 0.45rem 0 0.12rem;
+	border-bottom: 1px solid #E4E4E4;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+}
+.user_points_record .record_list dl dd.text_con p.date{
+	font-size: 0.24rem;
+	color: #333333;
+	margin-bottom: 0.2rem;
+}
+.user_points_record .record_list dl dd.text_con p.text{
+	font-size: 0.24rem;
+	color: #333333;
+}
+.user_points_record .record_list dl dd.num{
+	font-size: 0.32rem;
+	padding-right: 0.3rem;
+}
+.user_points_record .record_list dl dd.num.orange{
+	color: #fc511f;
+}
+.user_points_record .record_list dl dd.num.red{
+	
+}

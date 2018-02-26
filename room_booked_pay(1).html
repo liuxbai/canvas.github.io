@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>魔智点餐</title>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.mobile.custom.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/room.css" />
+	</head>
+	<body>
+		<div id="conBox">
+			<div id="subTop">
+				<dl class="flex">
+					<dd class="left">
+						<a href="javascript:history.back(-1);" class="return_bt"></a>
+					</dd>
+					<dd class="title flex">
+						选择支付方式
+					</dd>
+					<dd class="right">
+						<a href="#" class="user_bt"></a>
+					</dd>
+				</dl>
+			</div>
+			<div id="content">
+				<div class="room">
+					<div class="room_booked">
+						<div class="room_booked_pay">
+							<div class="price">
+								订单总额：￥2500
+							</div>
+							<div class="room_booked_pay_list">
+								<dl>
+									<label class="flex">
+										<dd class="icon">
+											<img src="images/alipay_icon_01.png" />
+										</dd>
+										<dd class="text_con">
+											<p class="title">支付宝</p>
+											<p class="text">支持储蓄卡信用卡，无需开通网银</p>
+										</dd>
+										<dd class="radioBox">
+											<input type="radio" name="payType" checked="checked" />
+											<span class="circle"></span>
+										</dd>
+									</label>
+								</dl>
+								<dl>
+									<label class="flex">
+										<dd class="icon">
+											<img src="images/wechat_icon_01.png" />
+										</dd>
+										<dd class="text_con">
+											<p class="title">微信</p>
+											<p class="text">支持储蓄卡信用卡，无需开通网银</p>
+										</dd>
+										<dd class="radioBox">
+											<input type="radio" name="payType" />
+											<span class="circle"></span>
+										</dd>
+									</label>
+								</dl>
+								<dl>
+									<label class="flex">
+										<dd class="icon">
+											<img src="images/balance_icon_01.png" />
+										</dd>
+										<dd class="text_con">
+											<p class="title">余额</p>
+											<p class="text">使用账号剩余余额支付</p>
+										</dd>
+										<dd class="radioBox">
+											<input type="radio" name="payType" />
+											<span class="circle"></span>
+										</dd>
+									</label>
+								</dl>
+							</div>
+							<div class="room_booked_pay_bt">
+								<button type="button">立即预订</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

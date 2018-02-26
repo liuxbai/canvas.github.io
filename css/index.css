@@ -1,0 +1,178 @@
+#indexTop{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 0.9rem;
+	background-color: #9F2AA4;
+	z-index: 99;
+}
+#indexTop dl{
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.2rem;
+}
+#indexTop dl dd.search{
+	width: 5.25rem;
+	height: 0.48rem;
+	position: relative;
+	background: rgba(255,255,255,0.3);
+	border-radius: 0.08rem;
+}
+#indexTop dl dd.search span.search_icon{
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;
+	background: url(../images/search_icon_01.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0.2rem;
+}
+#indexTop dl dd.search input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: none;
+	padding-left: 0.54rem;
+	padding-right: 0.1rem;
+	font-size: 0.24rem;
+	color: #FFFFFF;
+}
+#indexTop dl dd.search input::-webkit-input-placeholder{
+	color: #FFFFFF;
+}
+#indexTop dl dd.right{
+	width: 0.34rem;
+	height: 0.34rem;
+}
+#indexTop dl dd.right a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../images/user_icon_01.png) no-repeat;
+	background-size: cover;
+}
+
+#indexBanner{
+	background-color: #FFFFFF;
+}
+#indexBanner img{
+	width: 100%;
+}
+#indexBanner ol.carousel-indicators{
+	position: static;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	margin: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	height: 0.34rem;
+	align-items: center;
+	justify-content: center;
+}
+#indexBanner ol.carousel-indicators li{
+	width: 0.1rem;
+	height: 0.1rem;
+	margin: 0 0.05rem;
+	border: none;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+}
+#indexBanner ol.carousel-indicators li.active{
+	background-color: #9F2AA4;
+}
+.index_nav{
+	padding: 0.24rem 0.2rem;
+	border-bottom: 1px solid #E8E8E8;
+	background-color: #FFFFFF;
+}
+.index_nav dl{
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.index_nav dl dd{
+	width: 1.08rem;
+}
+.index_nav dl dd a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.index_nav dl dd p.icon{
+	display: block;
+	width: 0.84rem;
+	height: 0.84rem;
+	margin: 0 auto 0.13rem;
+}
+.index_nav dl dd p.icon img{
+	width: 100%;
+	height: 100%;
+}
+.index_nav dl dd p.title{
+	color: #ccc;
+	font-size: 0.22rem;
+	text-align: center;
+}
+
+.indexBox{
+	background: #FFFFFF;
+}
+.indexBox h3.indexBox_title{
+	font-size: 0.3rem;
+	color: #333333;
+	padding: 0.28rem 0.2rem;
+}
+.indexBox .indexBox_list{
+	padding: 0.2rem 0.2rem 0.05rem;
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+}
+.indexBox .indexBox_list dl{
+	width: 1.84rem;
+	float: left;
+	margin-left: 0.24rem;
+	margin-bottom: 0.3rem;
+}
+.indexBox .indexBox_list dl:nth-child(3n+1){
+	margin-left: 0;
+}
+.indexBox .indexBox_list dl dd.img{
+	width: 100%;
+	height: 1.5rem;
+	position: relative;
+	margin-bottom: 0.1rem;
+}
+.indexBox .indexBox_list dl dd.img img{
+	width: 100%;
+	height: 100%;
+}
+.indexBox .indexBox_list dl dd.img p.title{
+	width: 100%;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 0.2rem;
+	color: #FFFFFF;
+	background: rgba(0,0,0,0.5);
+}
+.indexBox .indexBox_list dl dd.price{
+	text-align: center;
+	font-size: 0.28rem;
+	color: #f94a5e;
+}
+.indexBox .indexBox_list dl dd.price span.old{
+	font-size: 0.16rem;
+	text-decoration: line-through;
+	margin-left: 0.1rem;
+}
